@@ -4,7 +4,7 @@
   .exp-desc.flex-1
     .exp-title {{title}}
     .exp-desc
-      .mark {{mark}}
+      .mark(v-if="mark") {{mark}}
       slot(name="tags")
       .desc {{desc}}
       slot
