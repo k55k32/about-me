@@ -1,0 +1,179 @@
+@bg: #ebebed;
+body{
+  font-size: 16px;
+  background: #f3f3f5;
+}
+*{
+  box-sizing: border-box;
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p{
+  margin:0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: darken(@bg, 40%);
+}
+.title{
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: .6em;
+}
+.field{
+  margin-bottom: 15px;
+  font-weight: normal;
+  .mark{
+    font-size: 1.1em;
+    margin-top: 2px;
+    font-weight: 100;
+  }
+}
+.row{
+  &>*{
+    padding: 10px;
+  }
+  position: relative;
+  .left{
+    background: @bg;
+    margin-right: 10px;
+    width: 30%;
+  }
+  .right{
+    flex:1;
+  }
+}
+.info-container{
+  border-bottom: 2px solid darken(@bg, 10%);
+  height: 100%;
+}
+.no-line, .single{
+  .info-container{
+    border-bottom: 0px;
+  }
+}
+.single{
+  .row{
+    display: block;
+    margin-top: 1.17em;
+  }
+  .left{
+    width: auto;
+  }
+}
+.title-mark{
+  margin: 15px 0;
+}
+.flex{
+  display: flex;
+}
+.flex-1{
+  flex:1;
+}
+.container{
+  max-width: 985px;
+  margin: auto;
+}
+.content{
+  padding: 30px 0;
+}
+.header{
+  background: @bg;
+  padding-top: 50px ;
+  padding-bottom: 10px;
+}
+.tags{
+  display: flex;
+  i{
+    display: block;
+    font-style: normal;
+    margin: 5px 0;
+    margin-right: 10px;
+    padding:2px 6px;
+    border-radius: 2px;
+    font-size: .9em;
+    &:nth-child(odd) {
+      background: #fff;
+    }
+    &:nth-child(even) {
+      background: @bg;
+    }
+  }
+}
+.light-font{
+  font-weight: 100;
+}
+.mini-font{
+  .mark{
+    font-size: .8em;
+  }
+}
+.qr-code-container{
+  display: flex;
+  align-items: center;
+}
+.qr-desc{
+  line-height: 2;
+  margin-right: 10px;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qr-code{
+  @size: 90px;
+  width: @size;
+  height: @size;
+  &>img{
+    height: 100%;
+    width: 100%;
+  }
+}
+.mobile-only{
+  display: none;
+}
+.myself{
+  line-height: 1.5;
+  font-size: .95em;
+}
+footer{
+  font-size: .8em;
+}
+@media (max-width: 768px) {
+  body{
+    font-size: 17px;
+  }
+  .mobile-only{
+    display: block;
+  }
+  .header{
+    background: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 100;
+    font-size: 14px;
+    h1{
+      font-weight: 100;
+    }
+  }
+  .qr-code-container{
+    display: none;
+  }
+  .flex{
+    display: block;
+  }
+  .row .left{
+    width: 100%;
+  }
+  .tags{
+    flex-wrap: wrap;
+  }
+  .info-container{
+    border-bottom: 0;
+  }
+  .experience .exp-desc{
+    font-size: .95em;
+  }
+}
