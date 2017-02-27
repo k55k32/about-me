@@ -33,7 +33,7 @@ div
             li 使用 nodejs 实现中间代理层，方便本地调试，以及复杂业务逻辑处理
             li 为项目组提供前端开发相关文档
           p 此外，还负责公司新版本产品前后端研发，以及前端相关的一些技术支持
-        experience(time="2015 ~ 2016" title="餐加企业咨询管理" mark="Team Loader")
+        experience(time="2015 ~ 2016" title="餐加企业咨询管理" mark="Team Leader")
           p 前期负责公司项目初期基础框架搭建，以及产品开发相关工作，包括:
           ul
             li 前端整体框架搭建，前端基础库的封装，以及UI组件编写
